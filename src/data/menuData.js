@@ -62,7 +62,7 @@ const menuData = [
           },
           {
             title: "EM-MS",
-            link: "/em-ms",
+            link: "",
           },
             {
             title: "BM-DS",
@@ -78,6 +78,10 @@ const menuData = [
        {
         title: "Academic Supporting Wing",
         children: [
+           {
+            title: "VP Exam Control",
+            link: "/vp-exam-control",
+          },
           {
             title: "Accounts",
             link: "/accounts",

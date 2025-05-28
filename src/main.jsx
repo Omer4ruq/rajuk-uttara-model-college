@@ -36,6 +36,11 @@ import "./index.css";
 import PictureProvider from "./Provider/PictureProvider.jsx";
 import CurrentPrincipal from "./components/pages/CurrentPrincipal";
 import ExPrincipals from "./components/pages/ExPrincipals";
+import Bmds from "./components/pages/Bmds";
+import Bmms from "./components/pages/Bmms";
+import VPExam from "./components/pages/VPExam";
+import Emds from "./components/pages/Emds";
+
 
 
 const router = createBrowserRouter([
@@ -175,6 +180,24 @@ const router = createBrowserRouter([
         path: "/ex-principals",
         element: <ExPrincipals />,
       },
+       {
+        path: "/bm-ds",
+        element: <Bmds />,
+      },
+         {
+        path: "/bm-ms",
+        element: <Bmms />,
+      },
+           {
+        path: "/em-ds",
+        element: <Emds />,
+      },
+       {
+        path: "/vp-exam-control",
+        element: <VPExam />,
+      },
+      
+      
     ],
   },
 ]);
