@@ -34,6 +34,8 @@ import ClassRoutine from "./components/Routines/ClassRoutine";
 import ExamRoutine from "./components/Routines/ExamRoutine";
 import "./index.css";
 import PictureProvider from "./Provider/PictureProvider.jsx";
+import CurrentPrincipal from "./components/pages/CurrentPrincipal";
+import ExPrincipals from "./components/pages/ExPrincipals";
 
 
 const router = createBrowserRouter([
@@ -164,7 +166,15 @@ const router = createBrowserRouter([
       {
         path: "/admission-page",
         element: <AdmissionPage />
-      }
+      },
+        {
+        path: "/current-principal",
+        element: <CurrentPrincipal></CurrentPrincipal>,
+      },
+        {
+        path: "/ex-principals",
+        element: <ExPrincipals />,
+      },
     ],
   },
 ]);

@@ -44,12 +44,12 @@ const menuData = [
         title: "Principle",
         children: [
           {
-            title: "Current Principle",
-            link: "/current-principle",
+            title: "Current Principal",
+            link: "/current-principal",
           },
           {
-            title: "Ex-Principles",
-            link: "/ex-principles",
+            title: "Ex-Principals",
+            link: "/ex-principals",
           },
         ],
       },
