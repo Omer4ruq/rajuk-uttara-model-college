@@ -40,6 +40,8 @@ import Bmds from "./components/pages/Bmds";
 import Bmms from "./components/pages/Bmms";
 import VPExam from "./components/pages/VPExam";
 import Emds from "./components/pages/Emds";
+import MedicalGallery from "./components/pages/MedicalGallery";
+import Counselling from "./components/pages/Counselling";
 
 
 
@@ -192,9 +194,17 @@ const router = createBrowserRouter([
         path: "/em-ds",
         element: <Emds />,
       },
+          {
+        path: "/medical",
+        element: <MedicalGallery />,
+      },
        {
         path: "/vp-exam-control",
         element: <VPExam />,
+      },
+         {
+        path: "/counseling",
+        element: <Counselling />,
       },
       
       

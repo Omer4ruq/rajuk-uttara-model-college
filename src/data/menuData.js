@@ -88,7 +88,11 @@ const menuData = [
           },
           {
             title: "Medical",
-            link: "/Library",
+            link: "/medical",
+          },
+           {
+            title: "Library",
+            link: "/library",
           },
             {
             title: "Counseling",
