@@ -42,6 +42,9 @@ import VPExam from "./components/pages/VPExam";
 import Emds from "./components/pages/Emds";
 import MedicalGallery from "./components/pages/MedicalGallery";
 import Counselling from "./components/pages/Counselling";
+import TermsAndConditions from "./components/pages/TermsAndConditions";
+import PrivacyPolicy from "./components/pages/PrivacyPolicy";
+import History from "./components/pages/History";
 
 
 
@@ -206,8 +209,18 @@ const router = createBrowserRouter([
         path: "/counseling",
         element: <Counselling />,
       },
-      
-      
+          {
+        path: "/terms",
+        element: <TermsAndConditions />,
+      },
+         {
+        path: "/privacy",
+        element: <PrivacyPolicy />,
+      },
+         {
+        path: "/history",
+        element: <History />,
+      },
     ],
   },
 ]);

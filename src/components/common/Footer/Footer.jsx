@@ -61,8 +61,8 @@ console.log("desc", desc)
         <ul>
           <li className="pb-3"><a href="#" className="whitespace-nowrap">About Us</a></li>
           <li className="pb-3"><a href="#" className="whitespace-nowrap">Our History</a></li>
-          <li className="pb-3"><a href="#" className="whitespace-nowrap">Privacy Policy</a></li>
-          <li className="pb-3"><a href="#" className="whitespace-nowrap">Terms & Conditions</a></li>
+          <li className="pb-3"><a href="/privacy" className="whitespace-nowrap">Privacy Policy</a></li>
+          <li className="pb-3"><a href="/terms" className="whitespace-nowrap">Terms & Conditions</a></li>
           <li className="pb-3"><a href="#" className="whitespace-nowrap">Contact Us</a></li>
         </ul>
       </div>
