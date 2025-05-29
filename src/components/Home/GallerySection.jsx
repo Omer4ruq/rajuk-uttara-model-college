@@ -29,7 +29,7 @@ const GallerySection = () => {
 
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 border-primary border p-5 rounded-md">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 bg-white border-primary border p-5 rounded-md">
         <div className="large_image_slider">
             <GallerySlider pictures={data}/>
         </div>

@@ -7,7 +7,7 @@ export default function Box({
 }) {
   return (
     <div
-      className={`${colSpan} border border-primary rounded-md relative pb-2`}
+      className={`${colSpan} border border-primary rounded-md relative pb-2 bg-white`}
     >
       <div className="flex items-center gap-3 bg-gradient-to-r from-primary to-secondary p-4 text-textColor">
         <img src={icon} alt="" className="h-5" />
@@ -17,3 +17,4 @@ export default function Box({
     </div>
   );
 }
+

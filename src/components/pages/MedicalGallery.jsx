@@ -10,7 +10,7 @@ const MedicalGallery = () => {
 
     return (
         <div className="bg-gray-100 p-6 rounded-lg shadow-md max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-center mb-6 text-gray-800">Medical Facilities Gallery</h2>
+            <h2 className="text-2xl font-semibold text-center mb-6 text-primary">Medical Facilities Gallery</h2>
 
             {/* Conditionally center images if there are only two */}
             <div className={`grid gap-6 ${isTwoImages ? "grid-cols-1 sm:grid-cols-2 justify-center" : "grid-cols-1 sm:grid-cols-2 md:grid-cols-3"}`}>

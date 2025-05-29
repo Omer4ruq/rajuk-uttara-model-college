@@ -17,7 +17,7 @@ const exPrincipals = [
 const ExPrincipals = () => {
     return (
         <div className="bg-gray-100 p-6 rounded-lg shadow-md max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-center mb-6 text-gray-800">Ex-Principals of the College</h2>
+            <h2 className="text-2xl font-semibold text-center mb-6 text-primary">Ex-Principals of the College</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 {exPrincipals.map((principal, index) => (
                     <div key={index} className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">

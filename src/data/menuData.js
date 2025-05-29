@@ -136,6 +136,10 @@ const menuData = [
       {
         title: "Details",
         children: [
+           {
+            title: "Our History",
+            link: "/history",
+          },
           {
             title: "Dress Code",
             link: "/dress-code",
