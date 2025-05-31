@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { images } from "../../../assets";
 import Axios from "../../../axios/axios";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 
@@ -10,6 +11,7 @@ const Footer = () => {
   const [desc, setDesc] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [showModal, setShowModal] = useState(false); 
 
   useEffect(() => {
     Axios.get('/api/institute') 
@@ -52,27 +54,28 @@ console.log("desc", desc)
         <p className="break-words hyphens-auto">{desc?.text}</p>
       </div> :  <div className="texts_wrapper lg:ml-5 ml-0 mt-3 lg:mt-0 my-6 flex justify-center items-center">
         <h2 className="xl:text-4xl text-3xl mb-2 ">{data?.institute_name}</h2>
-
       </div>
       }
      
       </div>
       <div className="footer__cont__item text-center lg:text-left w-full lg:w-auto">
         <ul>
-          <li className="pb-3"><a href="#" className="whitespace-nowrap">About Us</a></li>
-          <li className="pb-3"><a href="#" className="whitespace-nowrap">Our History</a></li>
-          <li className="pb-3"><a href="/privacy" className="whitespace-nowrap">Privacy Policy</a></li>
-          <li className="pb-3"><a href="/terms" className="whitespace-nowrap">Terms & Conditions</a></li>
-          <li className="pb-3"><a href="#" className="whitespace-nowrap">Contact Us</a></li>
+          <li className="pb-3"><Link to="#" className="whitespace-nowrap">About Us</Link></li>
+          
+          <li className="pb-3"><Link to="#" className="whitespace-nowrap">Our History</Link></li>
+          <li className="pb-3"><Link to="/privacy" target="_blank" className="whitespace-nowrap">Privacy</Link></li>
+          
+          <li className="pb-3"><Link to="/terms" target="_blank" className="whitespace-nowrap">Terms & Conditions</Link></li>
+          <li className="pb-3"><Link to="#" className="whitespace-nowrap">Contact Us</Link></li>
         </ul>
       </div>
       <div className="footer__cont__item text-center lg:text-left w-full lg:w-auto">
         <ul>
-          <li className="pb-3"><a href="#" className="whitespace-nowrap">Education Board</a></li>
-          <li className="pb-3"><a href="#" className="whitespace-nowrap">Teacher Information</a></li>
-          <li className="pb-3"><a href="#" className="whitespace-nowrap">Staff Information</a></li>
-          <li className="pb-3"><a href="#" className="whitespace-nowrap">Image Gallery</a></li>
-          <li className="pb-3"><a href="#" className="whitespace-nowrap">Video Gallery</a></li>
+          <li className="pb-3"><Link to="#" className="whitespace-nowrap">Education Board</Link></li>
+          <li className="pb-3"><Link to="#" className="whitespace-nowrap">Teacher Information</Link></li>
+          <li className="pb-3"><Link to="#" className="whitespace-nowrap">Staff Information</Link></li>
+          <li className="pb-3"><Link to="#" className="whitespace-nowrap">Image Gallery</Link></li>
+          <li className="pb-3"><Link to="#" className="whitespace-nowrap">Video Gallery</Link></li>
         </ul>
       </div>
       <div className="footer__cont__item flex flex-col justify-between min-w-28 w-full max-w-full lg:max-w-[220px] ">
@@ -89,7 +92,14 @@ console.log("desc", desc)
             <img src={images.addressIcon} alt="call icon" />
             <p>{data?.institute_address}</p>
           </li>
+           <li
+              className="opacity-0 hover:opacity-100 hover:text-blue-500 cursor-pointer transition-all duration-300"
+              onClick={() => setShowModal(true)}
+            >
+              Site Maker
+            </li>
         </ul>
+      
         <p className="text-textColor text-end">Site Visit Count : 
         {
           count.map((num, i) => (
@@ -99,6 +109,22 @@ console.log("desc", desc)
         </p>
       </div>
     </div>
+     {showModal && (
+        <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50">
+          <div className="bg-white p-6 rounded-lg shadow-lg text-center">
+            <h2 className="text-2xl font-bold mb-4">Site Created By</h2>
+            <p className="text-lg text-black">Omer Faruq</p>
+            <p className="text-sm">📧 Email: <a href="mailto:omerfaruq4@gmail.com" className="text-blue-500">omerfaruq4@gmail.com</a></p>
+            <p className="text-sm">🔗 GitHub: <a href="https://github.com/Omer4ruq" target="_blank" className="text-blue-500">github.com/omerfaruq4</a></p>
+            <button
+              className="mt-4 bg-blue-500 text-white px-4 py-2 rounded"
+              onClick={() => setShowModal(false)}
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
   </div>
   );
 };

@@ -27,7 +27,7 @@ const History = () => {
       </h2>
 
       {/* First Text Section */}
-      <p className="mb-6 text-lg leading-relaxed">
+      <p className="mb-6 text-lg text-primary leading-relaxed">
         The magnificently designed educational institution named Rajuk Uttara Model College stands proudly on
 the Dhaka-Mymensingh Road close to Azampur Bus Stand. It is situated at Sector-6 of Uttara Model
 Town about one km. from the Hazrat Shahajalal International Airport offering an eye catching view to
@@ -55,8 +55,8 @@ college section was formally inaugurated in the Academic year 1994-1995.
         ))}
       </div>
 
-      {/* Second Text Section */}
-      <p className="text-lg leading-relaxed mt-6">
+      {/* Second Text Section  */}
+      <p className="text-lg leading-relaxed mt-6 text-primary">
    The formal classes of college section started in the same year. Due to acute shortage of infrastructural
 facilities another development project for construction of a new building was taken up in the year 1995
 which was subsequently completed in two phases and the main academic building took its present

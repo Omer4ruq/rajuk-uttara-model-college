@@ -7,6 +7,7 @@ export default function SingleSpeech() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+    const [isExpanded, setIsExpanded] = useState(false);
 
   useEffect(() => {
     Axios.get('/messages-from-head') 
@@ -23,7 +24,7 @@ export default function SingleSpeech() {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error.message}</p>
 
-  const [isExpanded, setIsExpanded] = useState(false);
+
   
   
     const maxChars = 200;

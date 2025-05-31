@@ -7,7 +7,13 @@ import StaffAttendance from "./components/Attendance/StaffAttendance";
 import StudentAttendance from "./components/Attendance/StudentAttendance";
 import TeacherAttendance from "./components/Attendance/TeacherAttendance";
 import ContactUs from "./components/ContactUs/ContactUs";
-import { AcademicDocumentsDownload, AdmitCardDownload, ExamResult, FeeInfo, SeatPlan } from "./components/DownloadCorner";
+import {
+  AcademicDocumentsDownload,
+  AdmitCardDownload,
+  ExamResult,
+  FeeInfo,
+  SeatPlan,
+} from "./components/DownloadCorner";
 import AboutInstitute from "./components/pages/AboutInstitute.jsx";
 import AdmissionPage from "./components/pages/AdmissionForm";
 import CommiteeMembers from "./components/pages/CommiteeMembers";
@@ -45,8 +51,6 @@ import Counselling from "./components/pages/Counselling";
 import TermsAndConditions from "./components/pages/TermsAndConditions";
 import PrivacyPolicy from "./components/pages/PrivacyPolicy";
 import History from "./components/pages/History";
-
-
 
 const router = createBrowserRouter([
   {
@@ -175,51 +179,52 @@ const router = createBrowserRouter([
       },
       {
         path: "/admission-page",
-        element: <AdmissionPage />
+        element: <AdmissionPage />,
       },
-        {
+      {
         path: "/current-principal",
         element: <CurrentPrincipal></CurrentPrincipal>,
       },
-        {
+      {
         path: "/ex-principals",
         element: <ExPrincipals />,
       },
-       {
+      {
         path: "/bm-ds",
         element: <Bmds />,
       },
-         {
+      {
         path: "/bm-ms",
         element: <Bmms />,
       },
-           {
+      {
         path: "/em-ds",
         element: <Emds />,
       },
-          {
+      {
         path: "/medical",
         element: <MedicalGallery />,
       },
-       {
+      {
         path: "/vp-exam-control",
         element: <VPExam />,
       },
-         {
+      {
         path: "/counseling",
         element: <Counselling />,
       },
-          {
+
+      {
+        path: "/history",
+        element: <History />,
+      },
+      {
         path: "/terms",
         element: <TermsAndConditions />,
       },
-         {
+      {
         path: "/privacy",
         element: <PrivacyPolicy />,
-      },
-         {
-        path: "/history",
-        element: <History />,
       },
     ],
   },
