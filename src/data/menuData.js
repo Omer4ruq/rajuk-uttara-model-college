@@ -62,7 +62,7 @@ const menuData = [
           },
           {
             title: "EM-MS",
-            link: "",
+            link: "/em-ms",
           },
             {
             title: "BM-DS",
@@ -262,8 +262,22 @@ const menuData = [
       },
     ],
   },
+    {
+    title: "RESA",
+    link: "/resa",
+  },
+    {
+    title: "Publications",
+    link: "/publications",
+  },
+
+    {
+    title: "Career",
+    link: "/career",
+  },
+
   {
-    title: "Contact Us",
+    title: "Contact",
     link: "/contact-us",
   },
 ];

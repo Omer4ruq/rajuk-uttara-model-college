@@ -1,30 +1,34 @@
 import { useEffect, useState } from "react";
 import Axios from "../../axios/axios";
+import dressCode1 from "../../assets/images/dresscode/dresscode-1.jpg" 
+import dressCode2 from "../../assets/images/dresscode/dresscode-2.jpg" 
+import dressCode3 from "../../assets/images/dresscode/dresscode-3.jpg" 
+import dressCode4 from "../../assets/images/dresscode/dresscode-4.jpg" 
 
 export default function DressCode() {
-  const dressInfo = [
-    {
-      title: "৩য় থেকে ৫ম শ্রেণী",
-      maleDress:
-        "সাদা হাফ হাতা জামা ও কালো ফুল প্যান্ট সাথে কালো রঙয়ের জুতা ও মোজা।",
-      femaleDress:
-        "সাদা হাফ হাতা জামা ও কালো ফুল প্যান্ট সাথে কালো রঙয়ের জুতা ও মোজা।",
-    },
-    {
-      title: "৬ষ্ঠ থেকে ১০ম শ্রেণী",
-      maleDress:
-        "সাদা হাফ হাতা জামা ও কালো ফুল প্যান্ট সাথে কালো রঙয়ের জুতা ও মোজা।",
-      femaleDress:
-        "সাদা হাফ হাতা জামা ও কালো ফুল প্যান্ট সাথে কালো রঙয়ের জুতা ও মোজা।",
-    },
-    {
-      title: "একাদশ ও দ্বাদশ শ্রেণী",
-      maleDress:
-        "সাদা হাফ হাতা জামা ও কালো ফুল প্যান্ট সাথে কালো রঙয়ের জুতা ও মোজা।",
-      femaleDress:
-        "সাদা হাফ হাতা জামা ও কালো ফুল প্যান্ট সাথে কালো রঙয়ের জুতা ও মোজা।",
-    },
-  ];
+  // const dressInfo = [
+  //   {
+  //     title: "৩য় থেকে ৫ম শ্রেণী",
+  //     maleDress:
+  //       "সাদা হাফ হাতা জামা ও কালো ফুল প্যান্ট সাথে কালো রঙয়ের জুতা ও মোজা।",
+  //     femaleDress:
+  //       "সাদা হাফ হাতা জামা ও কালো ফুল প্যান্ট সাথে কালো রঙয়ের জুতা ও মোজা।",
+  //   },
+  //   {
+  //     title: "৬ষ্ঠ থেকে ১০ম শ্রেণী",
+  //     maleDress:
+  //       "সাদা হাফ হাতা জামা ও কালো ফুল প্যান্ট সাথে কালো রঙয়ের জুতা ও মোজা।",
+  //     femaleDress:
+  //       "সাদা হাফ হাতা জামা ও কালো ফুল প্যান্ট সাথে কালো রঙয়ের জুতা ও মোজা।",
+  //   },
+  //   {
+  //     title: "একাদশ ও দ্বাদশ শ্রেণী",
+  //     maleDress:
+  //       "সাদা হাফ হাতা জামা ও কালো ফুল প্যান্ট সাথে কালো রঙয়ের জুতা ও মোজা।",
+  //     femaleDress:
+  //       "সাদা হাফ হাতা জামা ও কালো ফুল প্যান্ট সাথে কালো রঙয়ের জুতা ও মোজা।",
+  //   },
+  // ];
 
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -48,13 +52,27 @@ export default function DressCode() {
   return (
     <>
       <div className="space-y-3">
-        <h2 className="text-2xl font-poppins font-medium text-textColor bg-primary px-4 py-3">
+        {/* <h2 className="text-2xl font-poppins font-medium text-textColor bg-primary px-4 py-3">
+          Dress Code
+    </h2> */}
+        <div className="space-y-6 px-4 py-6">
+        <h2 className="text-2xl font-poppins font-medium text-textColor bg-primary px-4 py-3 rounded shadow">
           Dress Code
         </h2>
-        {/* <h4 className="border border-primary rounded-md p-3 text-primary text-xl leading-6">
-          ইহা একটি ডেমু টেক্সট, এখানে আপনার প্রয়োজন অনুযায়ী বিস্তারিত লিখতে
-          পারবেন।জীবের মধ্যে সবচেয়ে সম্পূর্ণতা মানুষের। 
-        </h4> */}
+
+             {[dressCode1, dressCode2, dressCode3, dressCode4].map((img, idx) => (
+        <div
+          key={idx}
+          className="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+        >
+          <img
+            src={img}
+            alt={`Dress Code ${idx + 1}`}
+            className="w-full h-auto object-cover rounded-md"
+          />
+        </div>
+      ))}
+      </div>
       </div>
       {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 md:gap-3 lg:gap-4">
         {dressInfo.map((classRange, index) => (

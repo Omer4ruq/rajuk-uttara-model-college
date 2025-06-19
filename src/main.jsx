@@ -42,15 +42,21 @@ import "./index.css";
 import PictureProvider from "./Provider/PictureProvider.jsx";
 import CurrentPrincipal from "./components/pages/CurrentPrincipal";
 import ExPrincipals from "./components/pages/ExPrincipals";
-import Bmds from "./components/pages/Bmds";
-import Bmms from "./components/pages/Bmms";
+
 import VPExam from "./components/pages/VPExam";
-import Emds from "./components/pages/Emds";
+
 import MedicalGallery from "./components/pages/MedicalGallery";
 import Counselling from "./components/pages/Counselling";
 import TermsAndConditions from "./components/pages/TermsAndConditions";
 import PrivacyPolicy from "./components/pages/PrivacyPolicy";
 import History from "./components/pages/History";
+import Bmds from "./components/pages/BMDS";
+import BMMS from "./components/pages/BMMS";
+import EMDS from "./components/pages/EMDS";
+import EMMS from "./components/pages/EMMS";
+import RESA from "./components/pages/RESA";
+import Publications from "./components/pages/Publications";
+import Career from "./components/pages/Career";
 
 const router = createBrowserRouter([
   {
@@ -129,6 +135,19 @@ const router = createBrowserRouter([
         path: "/events",
         element: <Events />,
       },
+         {
+        path: "/resa",
+        element: <RESA />,
+      },
+         {
+        path: "/publications",
+        element: <Publications />,
+      },
+         {
+        path: "/career",
+        element: <Career />,
+      },
+     
       {
         path: "/contact-us",
         element: <ContactUs />,
@@ -195,11 +214,15 @@ const router = createBrowserRouter([
       },
       {
         path: "/bm-ms",
-        element: <Bmms />,
+        element: <BMMS />,
       },
       {
         path: "/em-ds",
-        element: <Emds />,
+        element: <EMDS />,
+      },
+       {
+        path: "/em-ms",
+        element: <EMMS />,
       },
       {
         path: "/medical",

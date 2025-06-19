@@ -1,18 +1,19 @@
 import React from 'react';
 
 const exPrincipals = [
-    { name: "কর্নেল নূরুন নবী (অবঃ)", img: "../../../public/images/ex-head-masters/nurun-nabi.jpeg", degree: "" },
-    { name: "ব্রিগেডিয়ার জেনারেল সোহরাব আলী তালুকদার", img: "../../../public/images/ex-head-masters/shorab-ali-talukdar.jpeg", degree: "" },
-    { name: "কর্নেল মোকাররম আলী খান", img: "../../../public/images/ex-head-masters/mokarram-ali-khan.jpeg", degree: "" },
-    { name: "ব্রিগেডিয়ার জেনারেল এ. কে. এম. রেজাউল করিম", img: "../../../public/images/ex-head-masters/rejaul-karim.jpeg", degree: "" },
-    { name: "ব্রিগেডিয়ার জেনারেল এ. এস. এম. মুশফিকুর রহমান, পিএসসি", img: "../../../public/images/ex-head-masters/mushfiq-ur-rahman.jpeg", degree: "" },
-    { name: "ব্রিগেডিয়ার জেনারেল মোঃ গোলাম হোসেন সরকার, পিএসসি", img: "../../../public/images/ex-head-masters/golam-hossan-sarkar.jpeg", degree: "" },
-    { name: "ব্রিগেডিয়ার জেনারেল মোঃ ইমামুল হুদা, পিএসসি", img: "../../../public/images/ex-head-masters/imamul-huda.jpeg", degree: "" },
-    { name: "ব্রিগেডিয়ার জেনারেল এম. এম. সালেহীন, এনডিসি, পিএসসি", img: "../../../public/images/ex-head-masters/m-m-salehin.jpeg", degree: "" },
-    { name: "ব্রিগেডিয়ার জেনারেল কাজী শওকত আলম, এনডিসি, পিএসসি", img: "../../../public/images/ex-head-masters/Kazi-Shawkat-alam.jpeg", degree: "" },
-    { name: "ব্রিগেডিয়ার জেনারেল তায়েফ উল হক, এনডিসি, পিএসসি, জি", img: "../../../public/images/ex-head-masters/tayef-ul-haq.jpeg", degree: "" },
-    { name: "ব্রিগেডিয়ার জেনারেল এ. এস. এম. বাহাউদ্দিন, এসিউপি, এসপিপি, এনডিসি, এএফডব্লিউসি, পিএসবি,জি ", img: "../../../public/images/ex-head-masters/a-s-m-bahauddin.jpeg", degree: "" },
+    { name: "Col Nurun Nabi", img: "../../../src/assets/images/ex-head-masters/nurun-nabi.jpeg", degree: "(Retd)" },
+    { name: "Brig Gen Sohrab Ali Talukder", img: "../../../src/assets/images/ex-head-masters/shorab-ali-talukdar.jpeg", degree: "(Retd)" },
+    { name: "Col Mokarrom Ali Khan", img: "../../../src/assets/images/ex-head-masters/mokarram-ali-khan.jpeg", degree: "(Retd)" },
+    { name: "BRig Gen A K M Rezaul Karim", img: "../../../src/assets/images/ex-head-masters/rejaul-karim.jpeg", degree: "(Retd)" },
+    { name: "Brig Gen A S M Musfiqur Rahman", img: "../../../src/assets/images/ex-head-masters/mushfiq-ur-rahman.jpeg", degree: "psc (Retd)" },
+    { name: "Brig Gen Mohd. Golam Hossain Sarker", img: "../../../src/assets/images/ex-head-masters/golam-hossan-sarkar.jpeg", degree: "psc (Retd)" },
+    { name: "Brig Gen Imamul Huda", img: "../../../src/assets/images/ex-head-masters/imamul-huda.jpeg", degree: "psc (Retd)" },
+    { name: "Brig Gen M M Salehin", img: "../../../src/assets/images/ex-head-masters/m-m-salehin.jpeg", degree: "ndc, psc (Retd)" },
+    { name: "Brig Gen Kazi Shawkat Alam", img: "../../../src/assets/images/ex-head-masters/Kazi-Shawkat-alam.jpeg", degree: "ndc, psc (Retd)" },
+    { name: "Brig Gen Tayef Ul Haq", img: "../../../src/assets/images/ex-head-masters/tayef-ul-haq.jpeg", degree: "ndc, psc, জি" },
+    { name: "Brig Gen A. S. M. Bahauddin", img: "../../../src/assets/images/ex-head-masters/a-s-m-bahauddin.jpeg", degree: "sup, spp, ndc, afwc, psc, g" },
 ];
+
 
 const ExPrincipals = () => {
     return (

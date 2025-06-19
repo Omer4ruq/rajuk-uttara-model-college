@@ -1,5 +1,5 @@
 import React from 'react';
-import matlubur from '../../../public/images/wing/matlubur.jpg';
+import matlubur from '../../../src/assets/images/wing/matlubur.jpg';
 
 const BMMS = () => {
     return (
@@ -14,8 +14,8 @@ const BMMS = () => {
                    </div>
        
                    {/* Text Section */}
-                   <h1 className="text-2xl font-bold text-gray-800 mb-2">মোঃ মাতলুবুর রহমান</h1>
-                   <p className="text-lg text-gray-600">উপাধ্যক্ষ, বাংলা মাধ্যম-প্রভাতি শাখা</p>
+                   <h1 className="text-2xl font-bold text-gray-800 mb-2">Md. Matlubur Rahman</h1>
+                   <p className="text-lg text-gray-600">Vice Principal, BMMS and VP Representative BOG, RUMC</p>
                </div>
     );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import headMasterImg from '../../../public/images/head-master.jpeg';
+import headMasterImg from '../../../src/assets/images/head-master.jpeg';
 
 const CurrentPrincipal = () => {
     return (

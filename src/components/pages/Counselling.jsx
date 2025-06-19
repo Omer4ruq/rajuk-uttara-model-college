@@ -1,7 +1,7 @@
 import React from 'react';
 
 const medicalImg = [
-    { name: "Medical Facility 1", img: "../../../public/images/counselling/img-1.jpg" },
+    { name: "Medical Facility 1", img: "../../../src/assets/images/counselling/img-1.jpg" },
 ];
 
 const Counselling = () => {
