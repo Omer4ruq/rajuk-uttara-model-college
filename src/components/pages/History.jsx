@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
+import img1 from "../../../src/assets/images/history/img-1.jpg";
+import img2 from "../../../src/assets/images/history/img-2.jpg";
+import img3 from "../../../src/assets/images/history/img-3.png";
 
 const historyImages = [
-  { name: "img 1", img: "/images/history/img-1.jpg" },
-  { name: "img 2", img: "/images/history/img-2.jpg" },
-  { name: "img 3", img: "/images/history/img-3.png" },
+  { name: "img 1", img: img1 },
+  { name: "img 2", img: img2 },
+  { name: "img 3", img: img3 },
 ];
 
 const History = () => {

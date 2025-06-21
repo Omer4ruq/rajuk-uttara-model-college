@@ -4,6 +4,7 @@ import Axios from "./axios/axios";
 import Footer from "./components/common/Footer/Footer";
 import FooterTop from "./components/common/Footer/FooterTop";
 import Header from "./components/common/Header/Header";
+import backgroundImage from './assets/images/background.png';
 
 export default function App() {
 
@@ -72,7 +73,13 @@ export default function App() {
 
   
   return (
-    <div className="font-poppins">
+    <div
+    style={{
+        backgroundImage: `url(${backgroundImage})`,
+      
+       
+      }}
+    className="font-poppins">
       <Header />
       <div className="container font-liAdorNoirrit my-4 lg:my-6 space-y-6 px-4 sm:px-6 sm:mx-auto xl:px-8 ">
         <Outlet />

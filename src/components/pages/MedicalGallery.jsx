@@ -1,8 +1,10 @@
 import React from 'react';
+import medeical1 from '../../../src/assets/images/medical/medicalimg1.jpeg'
+import medeical2 from '../../../src/assets/images/medical/medicalimg2.jpeg'
 
 const medicalImg = [
-    { name: "Medical Facility 1", img: "../../../src/assets/images/medical/medical1.jpg" },
-    { name: "Medical Facility 2", img: "../../../src/assets/images/medical/medical2.jpg" }
+    { name: "Medical Facility 1", img: medeical1 },
+    { name: "Medical Facility 2", img: medeical2 }
 ];
 
 const MedicalGallery = () => {

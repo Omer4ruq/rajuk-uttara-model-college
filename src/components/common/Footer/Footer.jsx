@@ -40,7 +40,7 @@ const Footer = () => {
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error.message}</p>
-console.log("desc", desc)
+// console.log("desc", desc)
   return (
   <div className="footer container-fluid text-textColor bg-gradient-to-r from-primary to-secondary font-ador py-8 text-[15px] text-base font-normal leading-6">
     <div className="foonter__cont container flex flex-wrap items-stretch lg:flex-nowrap lg:justify-between gap-8 sm:mx-auto px-4 sm:px-0 xl:px-8">
@@ -62,7 +62,7 @@ console.log("desc", desc)
         <ul>
           <li className="pb-3"><Link to="#" className="whitespace-nowrap">About Us</Link></li>
           
-          <li className="pb-3"><Link to="#" className="whitespace-nowrap">Our History</Link></li>
+          <li className="pb-3"><Link to="/history" className="whitespace-nowrap">Our History</Link></li>
           <li className="pb-3"><Link to="/privacy" target="_blank" className="whitespace-nowrap">Privacy</Link></li>
           
           <li className="pb-3"><Link to="/terms" target="_blank" className="whitespace-nowrap">Terms & Conditions</Link></li>
@@ -100,13 +100,13 @@ console.log("desc", desc)
             </li>
         </ul>
       
-        <p className="text-textColor text-end">Site Visit Count : 
+        {/* <p className="text-textColor text-end">Site Visit Count : 
         {
           count.map((num, i) => (
             <span key={i} className="border border-white px-1 ml-1">{num}</span>
           ))
         }
-        </p>
+        </p> */}
       </div>
     </div>
      {showModal && (
