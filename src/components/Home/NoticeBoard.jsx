@@ -50,24 +50,21 @@ export default function NoticeBoard() {
   };
 
   return (
-    <div className="space-y-2 font-poppins pb-6">
-      {data?.map((notice) => (
+    <div className="space-y-2 font-poppins pb-8 relative">
+      {data?.map((notice, index) => (
         <div
           className="rounded-md p-2 text-primary shadow-lg flex items-start gap-4 
-          cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110"
+          cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110 
+          animate-slide-up"
           key={notice.id}
           onClick={() => toggleExpand(notice.id)}
+          style={{ animationDelay: `${index * 100}ms` }}
         >
-          <div className="border-r-2 border-primary w-20 text-center "
-          
-          >
+          <div className="border-r-2 border-primary w-20 text-center">
             <h3 className="text-lg font-semibold">{getDayFromDate(notice?.date)}</h3>
             <h4 className="text-xs font-semibold">{getMonthNameFromDate(notice?.date)}</h4>
           </div>
-          <div
-            className="flex-1 cursor-pointer"
-            
-          >
+          <div className="flex-1 cursor-pointer">
             <div>
               <h3 className="font-semibold">{notice?.title}</h3>
               <h4 className="text-gray-500 text-xs">
@@ -76,7 +73,6 @@ export default function NoticeBoard() {
                   : notice.notice_title.substring(0, 60) + "..."}
               </h4>
             </div>
-            
             <div
               className={`transition-all duration-700 ease-in-out overflow-hidden ${
                 expandedNotices[notice.id] ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
@@ -100,10 +96,26 @@ export default function NoticeBoard() {
       ))}
 
       <Link to="/notices-and-announcements/">
-        <button className="text-primary font-semibold absolute bottom-0 right-0 px-4 py-2">
+        <button className="text-primary font-semibold absolute bottom-0 right-0 px-4 py-1">
           View More
         </button>
       </Link>
+
+      <style jsx>{`
+        @keyframes slide-up {
+          from {
+            transform: translateY(50px);
+            opacity: 0;
+          }
+          to {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+        .animate-slide-up {
+          animation: slide-up 800ms ease-in-out forwards;
+        }
+      `}</style>
     </div>
   );
 }

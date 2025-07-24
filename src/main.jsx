@@ -57,6 +57,7 @@ import EMMS from "./components/pages/EMMS";
 import RESA from "./components/pages/RESA";
 import Publications from "./components/pages/Publications";
 import Career from "./components/pages/Career";
+import SubjectTaught from "./components/pages/SubjectTaught";
 
 const router = createBrowserRouter([
   {
@@ -249,6 +250,12 @@ const router = createBrowserRouter([
         path: "/privacy",
         element: <PrivacyPolicy />,
       },
+        {
+        path: "/subjects-taught",
+        element: <SubjectTaught />,
+      },
+
+      
     ],
   },
 ]);

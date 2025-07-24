@@ -148,6 +148,10 @@ const menuData = [
             title: "Total Seat Info",
             link: "/total-seat-info",
           },
+             {
+            title: "Subjects We Taught",
+            link: "/subjects-taught",
+          },
           // {
           //   title: "Academic Syllabus",
           //   link: "/syllabus",
@@ -229,7 +233,8 @@ const menuData = [
       {
         title: "Academic Documents",
         link: "/academic-documents-download",
-      }
+      },
+     
     ],
   },
   {
@@ -268,7 +273,25 @@ const menuData = [
   },
     {
     title: "Publications",
-    link: "/publications",
+    children: [
+         {
+        title: "Rajuk Bulletin",
+        children: [
+      {
+        title: "Bulletin 1",
+        link: "https://drive.google.com/file/d/15r7j6PgBBHAi-f8du8vFmI5kb6IErse8/view?usp=sharing",
+      },
+      {
+        title: "Bulletin 2",
+        link: "https://drive.google.com/file/d/1GayAM5OhHyptgF3XYVL8MpstjL-w9LZ6/view?usp=sharing",
+      },
+        {
+        title: "Bulletin 3",
+        link: "https://drive.google.com/file/d/1WpEsZTXFl5BgQHNQwDW8etyuvFCwu31c/view?usp=sharing",
+      },
+    ],
+      }
+    ]
   },
 
     {

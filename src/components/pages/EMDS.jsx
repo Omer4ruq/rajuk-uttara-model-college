@@ -1,22 +1,23 @@
 import React from 'react';
-import nasimunnar from '../../../src/assets/images/wing/nasimunnar.jpg';
+import VicePrincipalProfile from './VicePrincipalProfile';
+import nasimunnar from '../../../src/assets/images/wing/emds.jpg';
+
 const EMDS = () => {
-    return (
-        <div className="bg-gray-100 p-6 rounded-lg shadow-md max-w-xl mx-auto text-center">
-                         {/* Image Section */}
-                         <div className="flex justify-center mb-4">
-                             <img 
-                                 src={nasimunnar} 
-                                 alt="Mosammad Nasimun Nahar Khan" 
-                                 className="w-40 h-40 rounded-full border-4 border-gray-300 shadow-lg"
-                             />
-                         </div>
-             
-                         {/* Text Section */}
-                         <h1 className="text-2xl font-bold text-gray-800 mb-2">Mosammad Nasimun Nahar Khan</h1>
-                         <p className="text-lg text-gray-600">Vice Principal, EMDS</p>
-                     </div>
-    );
+    const profileData = {
+        name: "Mosammad Nasimun Nahar Khan",
+        title: "Vice Principal, EMDS",
+        additionalTitle: "",
+        image: nasimunnar,
+        biography: "Mosammad Nasimun Nahar Khan joined as a lecturer of Economics in 01.09.1994. She was promoted as Assistant Professor in 03.10.2001 and to the post of Associate Professor in 28.04.2009. She joined as a Vice-Principal of EMDS in 10.11.2016.",
+        timeline: [
+            { role: "Lecturer (Economics)", date: "September 1, 1994", description: "Began her academic career as a Lecturer in Economics, contributing to the field of economic education." },
+            { role: "Assistant Professor", date: "October 3, 2001", description: "Promoted to Assistant Professor, acknowledged for her impactful work in economics education." },
+            { role: "Associate Professor", date: "April 28, 2009", description: "Advanced to Associate Professor, demonstrating excellence in teaching and research in economics." },
+            { role: "Vice Principal, EMDS", date: "November 10, 2016 - Present", description: "Appointed as Vice Principal of EMDS, leading academic and administrative efforts." }
+        ]
+    };
+
+    return <VicePrincipalProfile {...profileData} />;
 };
 
 export default EMDS;
