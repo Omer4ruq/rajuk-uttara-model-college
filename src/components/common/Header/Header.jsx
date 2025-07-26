@@ -53,7 +53,7 @@ export default function Header() {
           : 'relative z-50 shadow-md'
       }`}>
         {/* Navigation and Login */}
-        <div className="flex justify-end lg:justify-between gap-2 px-4 sm:px-6 xl:px-8 bg-white z-50">
+        <div className="flex justify-between gap-2 px-4 sm:px-6 xl:px-8 bg-white z-50">
           <NavMenu />
           <LoginButton />
         </div>
