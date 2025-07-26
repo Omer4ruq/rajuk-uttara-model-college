@@ -17,7 +17,7 @@ export default function NavMenu() {
       
       // Use mobile view for screens smaller than 1024px (lg breakpoint)
       // Or for medium screens where menu might overflow based on menu count
-      if (screenWidth < 1024 || (screenWidth < 1200 && menuData.length > 8) || (screenWidth < 1400 && menuData.length > 10)) {
+      if (screenWidth < 1024 ) {
         setIsMobileView(true);
       } else {
         setIsMobileView(false);

@@ -6,14 +6,14 @@ const LargeMenu = ({ menuItem }) => {
   const Wrapper = menuItem.link ? Link : "div";
 
   return (
-    <li className="relative group mx-0.5 lg:mx-1 my-1 lg:my-2 flex-shrink-0">
+    <li className="relative group mx-0.5 lg:mx-1 my-1 lg:my-2 flex-shrink-0 text-xs">
       <Wrapper
         to={menuItem.link}
         className={`flex items-center justify-between gap-1 lg:gap-2 rounded-md text-menuColor px-1.5 md:px-2 lg:px-3 py-1.5 md:py-2 lg:py-3 hover:bg-menuColor hover:text-white w-full h-full transition-all duration-200 text-xs md:text-sm lg:text-base whitespace-nowrap ${
           menuItem.link ? "" : "cursor-pointer"
         }`}
       >
-        <span className="truncate">{menuItem.title}</span>
+        <span className="truncate text-xs customxl:text-xs custom2xl:text-base">{menuItem.title}</span>
         {!menuItem.link && (
           <GoTriangleDown className="group-hover:rotate-180 duration-200 flex-shrink-0 ml-0.5 lg:ml-1 text-xs lg:text-sm" />
         )}

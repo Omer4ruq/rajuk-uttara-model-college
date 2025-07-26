@@ -30,6 +30,10 @@ export default {
           "100%": { transform: "translateX(-100%)" },
         },
       },
+      screens: {
+        'customxl': '1440px', // Custom breakpoint at 1440px
+        'custom2xl': '1840px', // Custom breakpoint at 1440px
+      },
     },
   },
   plugins: [
